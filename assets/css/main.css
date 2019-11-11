@@ -2595,7 +2595,7 @@ input, select, textarea {
 				display: block;
 				height: 100%;
 				width: 100%;
-				border-radius: 60%;
+				border-radius: 50%;
 				overflow: hidden;
 			}
 
