@@ -3340,7 +3340,7 @@ input, select, textarea {
 		  right: 0;
 		  background-color: #F8F8FF;*/
 		  overflow-x: hidden; /* Disable horizontal scroll */
-		  padding-top: 20px;
+		  padding-top: 50px;
 		}
 
 		/* The navigation menu links */
@@ -3350,4 +3350,5 @@ input, select, textarea {
 		  font-size: 25px;
 		  color: #818181;
 		  display: block;
+			text-align: center;
 		}
