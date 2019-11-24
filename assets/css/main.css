@@ -214,6 +214,7 @@ input, select, textarea {
 
 	h3 {
 		font-size: 1em;
+		margin: 0 0 0 0
 	}
 
 	h4 {
@@ -3348,7 +3349,7 @@ input, select, textarea {
 			text-align: center;
 		}
 
-		/* The navigation menu links */
+/* The navigation menu links */
 		.sidenav a {
 		  padding: 6px 8px 6px 8px;
 		  text-decoration: none;
@@ -3381,6 +3382,11 @@ input, select, textarea {
 			padding-right: 10px;
 		}
 
+		.sidenav > .search a{
+			border-bottom: none;
+			font-size: 15px;
+		}
+
 		.sidenav form:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
@@ -3411,4 +3417,50 @@ input, select, textarea {
 			right: 5px;
 			text-align: center;
 			width: 2em;
+		}
+
+/* Topic search */
+
+
+.lettergrid {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	margin: -2.5em 0 0 -2.5em;
+	margin-left: 10px;
+	border: 1px;
+}
+
+	.lettergrid article {
+		position: relative;
+		width: calc(5.88888% - .1em);
+		margin: 5px 5px 5px 5px;
+		border: solid 1px #000000;
+	}
+
+	.lettergrid article > h3 {
+		text-align: center;
+		letter-spacing: 0;
+	}
+	.lettegrid article > .image {
+		position: relative;
+		display: block;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+	}
+
+		.lettergrid article > .image img {
+			display: block;
+			width: 100%;
+		}
+		.lettergrid article > a > h3 {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			border-radius: 4px;
+			border-bottom: 0;
+			text-align: center;
+			text-decoration: none;
+			letter-spacing: 0;
 		}
