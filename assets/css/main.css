@@ -23,6 +23,7 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	color: black;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -1877,6 +1878,17 @@ input, select, textarea {
 
 		ol li {
 			padding-left: 0.25em;
+			margin-bottom: 0.4em;
+			border: 1px solid #585858;
+			border-radius: 5px;
+			width: 70%;
+		}
+
+		ol li a h3 {
+			font-size: 1.25em;
+			font-weight: 500;
+			letter-spacing: 0.1em;
+			padding-left: 0.25em;
 		}
 
 	ul {
@@ -1887,6 +1899,11 @@ input, select, textarea {
 
 		ul li {
 			padding-left: 0.5em;
+		}
+
+		ul li a h3 {
+			font-size: 1.25em;
+			font-weight: 550;
 		}
 
 		ul.alt {
@@ -2575,7 +2592,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
@@ -3157,16 +3174,34 @@ input, select, textarea {
 
 	#main {
 		margin-right: 20%;
-		padding: 0em 0 6em 0 ;
+		padding: 0em 0 1em 0 ;
+	}
+
+	#main > .inner > h2 {
+		margin: 0 0 0 0;
 	}
 
 		@media screen and (max-width: 736px) {
 
 			#main {
-				padding: 0em 0 4em 0 ;
+				padding: 0em 0 1em 0 ;
 			}
 
 		}
+
+/*letter*/
+		#letters {
+			margin-right: 20%;
+			padding: 0em 0 2em 0 ;
+		}
+
+			@media screen and (max-width: 736px) {
+
+				#letters {
+					padding: 0em 0 2em 0 ;
+				}
+
+			}
 
 /* Footer */
 
@@ -3427,7 +3462,7 @@ input, select, textarea {
 	flex-wrap: wrap;
 	position: relative;
 	margin: -2.5em 0 0 -2.5em;
-	margin-left: 10px;
+	margin-left: 0px;
 	border: 1px;
 }
 
@@ -3436,6 +3471,7 @@ input, select, textarea {
 		width: calc(5.88888% - .1em);
 		margin: 5px 5px 5px 5px;
 		border: solid 1px #000000;
+		border-radius: 4px;
 	}
 
 	.lettergrid article > h3 {
@@ -3448,19 +3484,45 @@ input, select, textarea {
 		height: 100%;
 		width: 100%;
 		overflow: hidden;
+		border-radius: 4px;
 	}
 
 		.lettergrid article > .image img {
 			display: block;
 			width: 100%;
+			border-radius: 4px;
 		}
 		.lettergrid article > a > h3 {
 			position: relative;
 			width: 100%;
 			height: 100%;
-			border-radius: 4px;
+			border-radius: 2px;
 			border-bottom: 0;
 			text-align: center;
 			text-decoration: none;
 			letter-spacing: 0;
+		}
+
+
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #9ad9d9;
+		  min-width: 320px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1;
+		}
+
+		.dropdown-content a {
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+
+		.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+		.dropdown:hover .dropdown-content {
+		  display: block;
 		}
