@@ -1882,6 +1882,7 @@ input, select, textarea {
 			border: 1px solid #0A5588;
 			border-radius: 5px;
 			width: 70%;
+			background-color: #F8F8FF
 		}
 
 		ol li a h3 {
@@ -3399,6 +3400,10 @@ input, select, textarea {
 		  display: block;
 			text-align: center;
 			text-transform: uppercase;
+		}
+
+	#wrapper >	.sidenav > .inner {
+			padding: 0 1px 0 1px;
 		}
 
 		.sidenav input[type=text] {
